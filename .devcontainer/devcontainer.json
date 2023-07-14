@@ -1,12 +1,6 @@
 {
 
-  "image": "nvidia/cuda:9.0-base",
-  "containerEnv": {
-		"NVIDIA_VISIBLE_DEVICES": "0"
-	},
-	"runArgs": [
-		"--runtime=nvidia"
-	],
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
   "hostRequirements": {
     "cpus": 4
   },
@@ -25,7 +19,7 @@
     }
   },
   "features": {
-    "ghcr.io/devcontainers/features/nvidia-cuda:1": {
+    "ghcr.io/devcontainers/features/nvidia-cuda:1.0.7": {
       "installCudnn": true
     }
   }
