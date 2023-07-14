@@ -1,6 +1,12 @@
 {
 
   "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "containerEnv": {
+		"NVIDIA_VISIBLE_DEVICES": "0,1"
+	},
+	"runArgs": [
+		"--runtime=nvidia"
+	],
   "hostRequirements": {
     "cpus": 4
   },
