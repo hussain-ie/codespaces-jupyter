@@ -1,7 +1,12 @@
 {
 
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
-  "runArgs": [ "--ipc=host", "--gpus=all"],
+  "containerEnv": {
+		"NVIDIA_VISIBLE_DEVICES": "all"
+	},
+	"runArgs": [
+		"--runtime=nvidia"
+	],
   "hostRequirements": {
     "cpus": 4
   },
