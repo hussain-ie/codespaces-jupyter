@@ -1,8 +1,8 @@
 {
 
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "image": "nvidia/cuda:9.0-base",
   "containerEnv": {
-		"NVIDIA_VISIBLE_DEVICES": "all"
+		"NVIDIA_VISIBLE_DEVICES": "0"
 	},
 	"runArgs": [
 		"--runtime=nvidia"
